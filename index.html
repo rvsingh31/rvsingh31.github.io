@@ -1,0 +1,592 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Ravinder Singh</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
+		 <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/animate.css/3.2.0/animate.min.css">   
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<!--[if lte IE 8]><link rel="stylesheet" href="assets/css/ie8.css" /><![endif]-->
+		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
+		
+		
+		<link rel="stylesheet" href="assets/css/normalize.min.css">
+        <link rel="stylesheet" href="assets/css/animate.min.css">
+		<link rel="stylesheet" href="assets/css/normalize.css">
+	<link rel="stylesheet" href="assets/css/ideal-image-slider.css">  
+	<link rel="stylesheet" href="assets/css/default.css">   
+	
+	<style>
+		
+            #btn-close-modal {
+                width:100%;
+                text-align: center;
+                cursor:pointer;
+                color:#fff;
+            }
+			.closebt {
+				-webkit-transition: all 0.2s;
+				-moz-transition: all 0.2s;
+				-ms-transition: all 0.2s;
+				-o-transition: all 0.2s;
+				transition: all 0.2s;
+				cursor:pointer;
+			}
+
+.closebt:hover {
+	transform:rotate(90deg);
+}
+	
+	#slider1 {
+		max-width: 900px;
+		margin: 50px auto;
+	}
+	#slider2 {
+		max-width: 900px;
+		margin: 50px auto;
+	}#slider3 {
+		max-width: 900px;
+		margin: 50px auto;
+	}#slider4 {
+		max-width: 900px;
+		margin: 50px auto;
+	}
+	
+	
+	.media {
+  display: inline-block;
+  position: relative;
+  vertical-align: top;
+}
+
+.media__image { display: block; }
+
+.media__body {
+  background: rgba(41, 128, 185, 0.7);
+  bottom: 0;
+  color: white;
+  font-size: 1em;
+  left: 0;
+  opacity: 0;
+  overflow: hidden;
+  padding: 3.75em 3em;
+  position: absolute;
+  text-align: center;
+  top: 0;
+  right: 0;
+  -webkit-transition: 0.6s;
+  transition: 0.6s;
+}
+
+.media__body:hover { opacity: 1; }
+
+.media__body:after,
+.media__body:before {
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  bottom: 1em;
+  content: '';
+  left: 1em;
+  opacity: 0;
+  position: absolute;
+  right: 1em;
+  top: 1em;
+  -webkit-transform: scale(1.5);
+  -ms-transform: scale(1.5);
+  transform: scale(1.5);
+  -webkit-transition: 0.6s 0.2s;
+  transition: 0.6s 0.2s;
+}
+
+.media__body:before {
+  border-bottom: none;
+  border-top: none;
+  left: 2em;
+  right: 2em;
+}
+
+.media__body:after {
+  border-left: none;
+  border-right: none;
+  bottom: 2em;
+  top: 2em;
+}
+
+.media__body:hover:after,
+.media__body:hover:before {
+  -webkit-transform: scale(1);
+  -ms-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+
+.media__body h2 { margin-top: 0; }
+
+.media__body p { margin-bottom: 1.5em; }
+
+
+
+	.link{
+		color:white;
+		-webkit-transition: all 0.8s;
+				-moz-transition: all 0.8s;
+				-ms-transition: all 0.8s;
+				-o-transition: all 0.8s;
+				transition: all 0.8s;
+				
+	}
+	.link:hover{
+		color:#4481A7;
+	}
+        </style>
+	</head>
+	<body>
+
+		<!-- Header -->
+			<div id="header">
+
+				<div class="top">
+
+					<!-- Logo -->
+						<div id="logo">
+							<span class="image avatar48"><img src="images/my_image.jpg" alt="" /></span>
+							<h1 id="title">Ravinder Singh</h1>
+							<p>B.Tech<sup>*</sup>(Computer Engg.)</p>
+						</div>
+
+					<!-- Nav -->
+						<nav id="nav">
+							<!--
+
+								Prologue's nav expects links in one of two formats:
+
+								1. Hash link (scrolls to a different section within the page)
+
+								   <li><a href="#foobar" id="foobar-link" class="icon fa-whatever-icon-you-want skel-layers-ignoreHref"><span class="label">Foobar</span></a></li>
+
+								2. Standard link (sends the user to another page/site)
+
+								   <li><a href="http://foobar.tld" id="foobar-link" class="icon fa-whatever-icon-you-want"><span class="label">Foobar</span></a></li>
+
+							-->
+							<ul>
+								<li><a href="#top" id="top-link" class="skel-layers-ignoreHref"><span class="icon fa-home">Intro</span></a></li>
+								<li><a href="#portfolio" id="portfolio-link" class="skel-layers-ignoreHref"><span class="icon fa-th">Portfolio</span></a></li>
+								<li><a href="#about" id="about-link" class="skel-layers-ignoreHref"><span class="icon fa-user">About Me</span></a></li>
+								<li><a href="#contact" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-envelope">Contact</span></a></li>
+								<li><a href="#!" id="contact-link" class="skel-layers-ignoreHref"><span class="icon fa-download">Resume</span></a></li>
+							</ul>
+						</nav>
+
+				</div>
+
+				<div class="bottom">
+
+					<!-- Social Icons -->
+						<ul class="icons">
+							<li><a href="https://www.facebook.com/ravinder31.singh" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+							<li><a href="https://in.linkedin.com/in/ravinder-singh-32424a120" class="icon fa-linkedin"><span class="label">Facebook</span></a></li>
+							<li><a href="https://github.com/rvsingh31" class="icon fa-github"><span class="label">Github</span></a></li>
+							<li><a href="mailto:ravindersingh3104.rs@gmail.com" class="icon fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+
+				</div>
+
+			</div>
+
+		<!-- Main -->
+			<div id="main">
+
+				<!-- Intro -->
+					<section id="top" class="one dark cover">
+						<div class="container">
+
+							<header>
+								<h2 class="alt">Hi! I'm <strong>Ravinder Singh</strong>, a Pre-Final Year Engineering Student<br />
+									at <a href="http://www.ddu.ac.in">Dharmsinh Desai University </a>,<br/> Nadiad, Gujarat,India.</h2>
+								<p>A part-time Web Developer.<br />
+								</p>
+								
+							</header>
+
+							<footer>
+								<a href="#portfolio" class="button scrolly">Portfolio</a>
+							</footer>
+
+						</div>
+					</section>
+
+				<!-- Portfolio -->
+					<section id="portfolio" class="two">
+						<div class="container">
+
+							<header>
+								<h2>Portfolio</h2>
+							</header>
+
+							<p>The below listed are some of my projects which I made during my Engineering Course at DDU.
+							These include the projects made for submission purpose but equipped with all the features 
+							and also the ones which are deployed on server.</p>
+
+							<div class="row">
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a id="demo01" href="#animatedModal" class="image fit">
+											<div class="media"> 
+												<img class="media__image" src="images/pic02.jpg" alt="" />
+												<div class="media__body">
+													<h4 style="color:white">Expen-Track</h4>
+												</div>
+											</div>
+										</a>
+										<header>
+											<h4>Expen-Track</h4>
+										</header>
+									</article>
+									<article class="item">
+										<a  id="demo04" href="#animatedModal4" class="image fit">
+											<div class="media">	
+												<img class=" media__image" src="images/pic03.jpg" alt="" />
+												<div class="media__body">
+													<h4 style="color:white">CSI Coding Portal</h4>
+												</div>
+											</div>
+										</a>
+										<header>
+											<h4>CSI Coding Portal</h4>
+										</header>
+										
+									</article>  
+								</div>
+								<div class="4u 12u$(mobile)">
+									<article class="item">
+										<a id="demo02" href="#animatedModal2" class="image fit">
+										<div class="media">	
+												<img class=" media__image" src="images/pic04.jpg" alt="" />
+												<div class="media__body">
+													<h4 style="color:white">Stonebaked Pizza Restaurant</h4>
+												</div>
+											</div>
+											</a>
+										<header>
+											<h4>Stonebaked Pizza</h4>
+										</header>
+									</article>
+							<!--		<article class="item">
+										<a href="#" class="image fit">
+										<div class="media">
+												<img class=" media__image" src="images/pic05.jpg" alt="" />
+												<div class="media__body">
+													<h4 style="color:white">Natoque Vitae</h4>
+												</div>
+										</div>
+										</a>
+									</article>   -->
+ 								</div>
+								<div class="4u$ 12u$(mobile)">
+							<!--		<article class="item">
+										<a href="#" class="image fit">
+										<div class="media">
+											<img class=" media__image" src="images/pic06.jpg" alt="" />
+											<div class="media__body">
+												<h4 style="color:white">Dolor Penatibus</h4>
+											</div>
+										</div>
+										</a>
+							
+									</article>    -->   
+									<article class="item" >
+										<a  id="demo03" href="#animatedModal3"class="image fit">
+										<div class="media">
+											<img class=" media__image" src="images/pic07.jpg" alt="" />
+											<div class="media__body">
+												<h4 style="color:white">Online Travel Management System</h4>
+											</div>
+										</div>
+										</a>
+										<header>
+											<h4>Online Travel Management System</h4>
+										</header>
+									</article>
+								</div>
+							</div>
+
+						</div>
+					</section>
+
+				<!-- About Me -->
+					<section id="about" class="three">
+						<div class="container">
+
+							<header>
+								<h2>About Me</h2>
+							</header>
+
+							<a class="image featured"><img src="images/pic08.jpg" alt="" /></a>
+
+							<p>
+							I'm <script>var d=new Date(); var n=d.getFullYear(); var x=n-1996; document.write(x);</script> year old Undergraduate ,from Ahmedabad , pursuing B.Tech in Computer Engineering at 
+							Dharmsinh Desai University,Nadiad,Gujarat. I completed my schooling from St. Xavier's High School,Mirzapur,Ahmedabad. You can have a look at my technical skills in my <a style="color:#4481A7;" href="#!">Resume</a> .
+							Apart from Technical Stuff, I watch Hollywood TV Series .My all-time favourite TV Show has been GAME of THRONES . I am also a football fan ,to be very specific , a <span style="color:red">Barcelona</span> Fan !
+							
+							</p>
+
+						</div>
+					</section>
+
+				<!-- Contact -->
+					<section id="contact" class="four">
+						<div class="container">
+
+							<header>
+								<h2>Contact</h2>
+							</header>
+
+							<p> You can mail me at ravindersingh3104.rs@gmail.com</p>
+									<p style="text-align:center">Or<p>	
+								<p>	You can call me at +91-8460348865.</p>
+								<p>
+									Want your own website?<br/>
+									Drop a line over here for any kind of details or queries.
+								</p>
+
+							<form method="post" action="mailto:ravindersingh3104.rs@gmail.com">
+								<div class="row">
+									<div class="6u 12u$(mobile)"><input type="text" name="name" placeholder="Name" /></div>
+									<div class="6u$ 12u$(mobile)"><input type="text" name="email" placeholder="Email" /></div>
+									<div class="12u$">
+										<textarea name="message" placeholder="Message"></textarea>
+									</div>
+									<div class="12u$">
+										<input type="submit" value="Send Message" />
+									</div>
+								</div>
+							</form>
+
+						</div>
+					</section>
+
+			</div>
+			<div id="animatedModal">
+				<div  id="btn-close-modal" class="close-animatedModal"> 
+					<img class="closebt" style="width:2.5em" src="closebt.svg">
+				</div>
+                
+				<div class="modal-content" style="color:white">
+					<br/>
+					<p style="text-align:center">EXPEN-TRACK</p>
+					<br/>
+				<ul>
+					<li>
+						This web-app deals with the bill/payment management.
+					</li>
+					<li>
+						Whenever , you go on a trip , you tend to pay for your friends and collect the money later on.
+					</li>
+					<li>
+						This web-app provides you a mechanism to take care of your bills in a very easy manner with a great UI support.
+						You can create a group of your respective friends and split and settle bills accordingly.
+					</li>
+					<li>
+						On the contrary, you can also manage your daily bills too. We all keep a specific limit for one day's total expense.
+						This web-app lets you do so . You can keep a track of the bills and even create a report monthly .
+					</li>
+					<li>
+						I made this web-app during my 4<sup>th</sup> semester in college. It was made between February,2015 - March,2015 and was a part of college project.
+					</li>
+					<li>
+						This web-app is not deployed on any server ,so there is no live demonstration . The source code is available at my github account .
+						It is built in PHP and Material-UI .
+					</li>
+					<li>
+						Feel free to refer to the code and develop it further with more feature if you want to.
+					</li>
+				</ul>
+					
+					&nbsp;&nbsp;&nbsp;<span style="color:#A2F0F2">Repository</span>:<a class="link" href="https://github.com/rvsingh31/ExpenTrack"> ExpenTrack </a>. <br/>
+					&nbsp;&nbsp;&nbsp;<span style="color:#A2F0F2">Github-Id</span>:<a class="link" href="https://github.com/rvsingh31">rvsingh31</a>.
+					<br/>
+					<p style="text-align:center;color:#A2F0F2">Here are some screenshots :</p>
+					
+					
+					<div id="slider1">
+						<img src="images/et1.jpg" title="Home Page" alt="This page explains the web-app as a whole" />
+						<img data-src="images/et2.png" src="" title="DashBoard" alt="This page has all the navigation to each part of the web-app" />
+						<img data-src="images/et3.png" src="" title="Invite Friend" alt="Send Invitation via email to you friend" />
+						<img data-src="images/et4.png" src="" title="Make a New Group" alt="" />
+						<img data-src="images/et5.png" src="" title="Daily Expense" alt="Maintain your daily expenses accordingly" />
+						<img src="images/et6.png" title="Add Friend" alt="Make a New Friend" />
+						<img src="images/et7.png" title="Split Bills" alt="Bill Maintenance with your friends" />
+						<img src="images/et8.png" title="Account Settings" alt="Manage your Account " />
+						<img src="images/et9.png" title="Login Page" alt="Register as a New Member or Log in to the web-app" />
+						
+					</div>
+			</div>
+        </div>
+		
+		<div id="animatedModal2">
+				<div  id="btn-close-modal" class="close-animatedModal2"> 
+					<img class="closebt" style="width:2.5em" src="closebt.svg">
+				</div>
+                
+				<div class="modal-content" style="color:white">
+					<br/>
+					<p style="text-align:center">STONEBAKED PIZZA WEBSITE</p>
+					
+					<div id="slider2">
+						<img src="images/1.jpg" data-src-2x="images/1@2x.jpg" title="Baloons" alt="This is the caption content" />
+						<img data-src="images/2.jpg" data-src-2x="images/2@2x.jpg" src="" title="Skateboard" alt="Captions <em>can</em> contain <strong>HTML</strong>" />
+						<img data-src="images/3.jpg" data-src-2x="images/3@2x.jpg" src="" alt="This will be overridden" data-caption="#caption-3" />
+						<img data-src="images/4.jpg" data-src-2x="images/4@2x.jpg" src="" title="A title without a caption" alt="" />
+						<img data-src="images/3.jpg" data-src-2x="images/4@2x.jpg" src="" title="Silly?" alt="A really really really really really really really really really really really really really really really really really really really really really really really really really long caption" />
+					</div>
+				</div>
+        </div>
+		
+		<div id="animatedModal3">
+				<div  id="btn-close-modal" class="close-animatedModal3"> 
+					<img class="closebt" style="width:2.5em" src="closebt.svg">
+				</div>
+                
+				<div class="modal-content" style="color:white">
+					<br/>
+					<p style="text-align:center">ONLINE TRAVEL MANAGEMENT SYSTEM</p>
+					
+					<ul>
+					<li>
+						This web-app deals with booking of Holiday Packages for travellers.
+					</li>
+					<li>
+						The website plans on creating a tie-up with various agencies who provide latest Holiday Packages and Customers can select them accordingly.
+					</li>
+					<li>
+						This web-app provides you a mechanism to keep a track of all the bookings as well as cancellations in a very easy manner with a great UI support.
+					</li>
+					<li>
+						On the contrary, Even the agencies can manage and add or remove new packages by using a representative account at the agency section..</li>
+					<li>
+						I made this web-app during my 5<sup>th</sup> semester in college. It was made between September,2016 - October,2016 and was a part of college project.
+					</li>
+					<li>
+						This web-app is not deployed on any server because the payment gateway feature wasn't included ,so there is no live demonstration . The source code is available at my github account .
+						It is built in ASP.NET and Material-UI .
+					</li>
+					<li>
+						Feel free to refer to the code and develop it further with more feature if you want to.
+					</li>
+				</ul>
+					
+					&nbsp;&nbsp;&nbsp;<span style="color:#A2F0F2">Repository</span>:<a class="link" href="https://github.com/rvsingh31/Project-Repository"> Project Repository </a>. <br/>
+					&nbsp;&nbsp;&nbsp;<span style="color:#A2F0F2">Github-Id</span>:<a class="link" href="https://github.com/rvsingh31">rvsingh31</a>.
+					<br/>
+					<p style="text-align:center;color:#A2F0F2">Here are some screenshots :</p>
+					
+				
+					
+					<div id="slider3">
+						<img src="images/tm1.png"  title="Start Page" />
+						<img src="images/tm2.png"  title="Login/Register Section" />
+						<img src="images/tm3.png"  title="DashBoard" alt="Book Packages " />
+						<img src="images/tm4.png"  title="History" alt="Keep a Track!" />
+						<img src="images/tm5.png"  title="Account Settings"/>
+						<img src="images/tm6.png"  title="Booking Section" />
+						<img src="images/tm7.png"  title="Agency Section Dashboard" alt="Add/Manage Package" />
+						<img src="images/tm8.png"  title="Details" alt="Booked Customers Info" />
+						<img src="images/tm9.png"  title="Edit Package Details" />
+						
+						</div>
+
+				</div>
+        </div>
+		
+		<div id="animatedModal4">
+				<div  id="btn-close-modal" class="close-animatedModal4"> 
+					<img class="closebt" style="width:2.5em" src="closebt.svg">
+				</div>
+                
+				<div class="modal-content" style="color:white">
+					<br/>
+					<p style="text-align:center">CSI CODING PORTAL</p>
+					<br/>
+				<ul>
+					<li>
+						This is a coding portal made for conducting Coding Competitions at college level.
+					</li>
+					<li>
+						It was initially developed by two of my colleagues Shaunak Thakker and Harsh Sodiwala.
+					</li>
+					<li>
+						My part was to update the portal and make it more dynamic and compatible to organize various competitions in a simplified manner.
+					</li>
+					<li>
+							Basically, students can download the input file and pass it as an input to their code and generate an output file which is uploaded here.
+							Then , on successful submission ,points are added accordingly.
+							The admin panel lets us have a simplified support for organizing new competitions on a regular basis.
+					</li>
+					<li>
+						I updated this portal in June,2015.It is built in PHP and the user-end is made using Bootstrap and the admin panel in Material-UI.
+					</li>
+					<li>
+						This portal is deployed on the college server and is up and running successfully .
+						This portal is a part of a committee named Computer Society of India-DDU Student Branch which helds these competitions in the college.
+					</li>
+				</ul>
+					
+					<br/>
+					<p style="text-align:center;color:#A2F0F2">Here are some screenshots :</p>
+					
+					
+					<div id="slider4">
+						<img src="images/cp1.jpg" title="Home" alt="Login Page" />
+						<img src="images/cp2.png" title="Problems"  />
+						<img src="images/cp3.png" title="Upload" alt="Upload your solution and check the output" />
+						<img src="images/cp4.png" title="Admin Login Page"  />
+						<img src="images/cp5.png" title="Competition Manager" alt="Manage the competition details" />
+						<img src="images/cp6.png" title="Problems Manager" alt="Upload Problems and solutions" />
+						<img src="images/cp7.png" title="User Management" />
+						<img src="images/cp8.png" title="Rankings" />
+					</div>
+				</div>
+        </div>
+		<!-- Footer -->
+			<div id="footer">
+
+				<!-- Copyright -->
+					<ul class="copyright">
+						<li><a href="#!">Ravinder Singh.</a></li>
+					</ul>
+
+			</div>
+
+			<script src="assets/js/jquery.min.js"></script>
+			<script src="assets/js/jquery.scrolly.min.js"></script>
+			<script src="assets/js/jquery.scrollzer.min.js"></script>
+			<script src="assets/js/skel.min.js"></script>
+			<script src="assets/js/util.js"></script>  
+			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+		<script src="assets/js/main.js"></script>
+			
+ <script src="assets/js/animatedModal.min.js"></script>
+      
+	<script>
+	var slider1 = new IdealImageSlider.Slider('#slider1');
+	slider1.addBulletNav();
+	slider1.addCaptions();
+	slider1.start();
+	var slider2 = new IdealImageSlider.Slider('#slider2');
+	slider2.addBulletNav();
+	slider2.addCaptions();
+	slider2.start();
+	var slider3 = new IdealImageSlider.Slider('#slider3');
+	slider3.addBulletNav();
+	slider3.addCaptions();
+	slider3.start();
+	var slider4 = new IdealImageSlider.Slider('#slider4');
+	slider4.addBulletNav();
+	slider4.addCaptions();
+	slider4.start();
+	
+	</script>
+	</body>
+</html>
